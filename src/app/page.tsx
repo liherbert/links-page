@@ -1,6 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import perfilImg from "public/perfil.jpg";
+import artstationImg from "public/icon_artstation.png";
+import instagramImg from "public/icon_instagram.png";
+import linkedinImg from "public/icon_linkedin.png";
+import youtubeinImg from "public/icon_youtube.png";
+import pequenavingancaImg from "public/icon_pequena_vinganca.jpg";
+import discordImg from "public/icon_discord_branco.png";
+
 export default function Home() {
   return (
     <div className="w-screen h-screen">
@@ -9,7 +17,8 @@ export default function Home() {
         <div className="mr-0 flex flex-col w-96 justify-center items-center md:mr-10">
           <div className="bg-fundo-branco bg-center bg-no-repeat bg-contain rounded-full w-52 h-52 mt-12 flex items-center justify-center">
             <div className="border-4 border-white rounded-full w-32 h-32  overflow-hidden shadow-2xl items-center flex flex-row justify-center">
-              <Image
+              <img
+                // src="/perfil.jpg"
                 src="/perfil.jpg"
                 width={128}
                 height={128}
@@ -63,12 +72,12 @@ export default function Home() {
 
           <Link href="https://discord.gg/7xq82T6rb2">
             <button className="flex justify-between items-center rounded-full text-center drop-shadow-2xl w-full h-10 transition ease-in-out delay-100 bg-red-bt hover:-translate-y-1 hover:scale-110  hover:bg-red-bt-h duration-100 ">
-              <div className="ml-6">
-                <Image
+              <div className="ml-6 w-8">
+                {/* <Image  */}
+                <img
                   src="/icon_discord_branco.png"
-                  width={28}
-                  height={28}
-                  alt="Imagem do ícone do instagram"
+                  // src={discordImg}
+                  alt="Imagem do ícone do discord"
                 />
               </div>
               <div className="w-full pr-12 text-center">
@@ -81,7 +90,7 @@ export default function Home() {
 
           <Link href="https://liherbert-lisboa.kpages.online/nova-pagina-612e3323-8d10-4592-8318-14b877df6a3e">
             <button className="flex justify-between items-center rounded-full text-center drop-shadow-2xl w-full h-10 transition ease-in-out delay-100 bg-red-bt hover:-translate-y-1 hover:scale-110  hover:bg-red-bt-h duration-100 ">
-              <div className="ml-6">📕</div>
+              <div className="ml-6 w-8">📕</div>
               <div className="w-full pr-12 text-center">
                 E-book - Do zero ao 3D Low Poly
               </div>
@@ -92,13 +101,12 @@ export default function Home() {
 
           <Link href="https://www.artstation.com/liherbert_artes">
             <button className="flex justify-between items-center rounded-full text-center drop-shadow-2xl w-full h-10 transition ease-in-out delay-100 bg-red-bt hover:-translate-y-1 hover:scale-110  hover:bg-red-bt-h duration-100 ">
-              <div className="ml-6">
-                {" "}
-                <Image
+              <div className="ml-6 w-8">
+                {/* <Image */}
+                <img
                   src="/icon_artstation.png"
-                  width={28}
-                  height={28}
-                  alt="Imagem do ícone do instagram"
+                  // src={artstationImg}
+                  alt="Imagem do ícone do artstation"
                 />
               </div>
               <div className="w-full pr-12 text-center">Artstation</div>
@@ -107,14 +115,13 @@ export default function Home() {
 
           <Link href="http://www.instagram.com/pequena_vinganca">
             <button className="flex justify-between items-center rounded-full text-center drop-shadow-2xl w-full h-10 transition ease-in-out delay-100 bg-red-bt hover:-translate-y-1 hover:scale-110  hover:bg-red-bt-h duration-100 ">
-              <div className="ml-6">
-                {" "}
-                <Image
-                  className="rounded-md"
+              <div className="ml-6 w-8">
+                {/* <Image */}
+                <img
                   src="/icon_pequena_vinganca.jpg"
-                  width={28}
-                  height={28}
-                  alt="Imagem do ícone do instagram"
+                  className="rounded-md"
+                  // src={pequenavingancaImg}
+                  alt="Imagem do ícone pequena vingança"
                 />
               </div>
               <div className="w-full pr-12 text-center">
@@ -130,11 +137,11 @@ export default function Home() {
 
           <Link href="https://www.instagram.com/liherbert_artes/">
             <button className="flex justify-between items-center rounded-full text-center drop-shadow-2xl w-full h-10 transition ease-in-out delay-100 bg-red-bt hover:-translate-y-1 hover:scale-110  hover:bg-red-bt-h duration-100 ">
-              <div className="ml-6">
-                <Image
+              <div className="ml-6 w-8">
+                {/* <Image */}
+                <img
                   src="/icon_instagram.png"
-                  width={28}
-                  height={28}
+                  // src={instagramImg}
                   alt="Imagem do ícone do instagram"
                 />
               </div>
@@ -144,12 +151,12 @@ export default function Home() {
 
           <Link href="https://www.instagram.com/liherbert_artes/">
             <button className="flex justify-between items-center rounded-full text-center drop-shadow-2xl w-full h-10 transition ease-in-out delay-100 bg-red-bt hover:-translate-y-1 hover:scale-110  hover:bg-red-bt-h duration-100 ">
-              <div className="ml-6">
-                <Image
+              <div className="ml-6 w-8">
+                {/* <Image */}
+                <img
                   src="/icon_linkedin.png"
-                  width={28}
-                  height={28}
-                  alt="Imagem do ícone do instagram"
+                  //  src={linkedinImg}
+                  alt="Imagem do ícone do linkedin"
                 />
               </div>
               <div className="w-full pr-12 text-center">LinkedIn</div>
@@ -163,12 +170,12 @@ export default function Home() {
 
           <Link href="https://www.youtube.com/c/LiherbertArtes?sub_confirmation=1">
             <button className="flex justify-between items-center rounded-full text-center drop-shadow-2xl w-full h-10 transition ease-in-out delay-100 bg-red-bt hover:-translate-y-1 hover:scale-110  hover:bg-red-bt-h duration-100 ">
-              <div className="ml-6">
-                <Image
+              <div className="ml-6 w-8">
+                {/* <Image  */}
+                <img
                   src="/icon_youtube.png"
-                  width={28}
-                  height={28}
-                  alt="Imagem de perfil"
+                  // src={youtubeinImg}
+                  alt="Imagem de youtube"
                 />
               </div>
               <div className="w-full pr-12 text-center">Youtube</div>
