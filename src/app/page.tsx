@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import Topo from "../components/Topo";
+
 import perfilImg from "public/perfil.jpg";
 import artstationImg from "public/icon_artstation.png";
 import instagramImg from "public/icon_instagram.png";
@@ -12,6 +14,7 @@ import discordImg from "public/icon_discord_branco.png";
 export default function Home() {
   return (
     <div className="w-screen h-screen">
+      <Topo />
       <div className="m-0 flex flex-col items-center justify-center md:flex-row">
         {/* lateral esquerda */}
         <div className="mr-0 flex flex-col w-96 justify-center items-center md:mr-10">
