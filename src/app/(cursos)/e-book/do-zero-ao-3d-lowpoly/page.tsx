@@ -12,6 +12,7 @@ import imgPerfilSobre from "public/images/cursos/do-zero-ao-3d-lowpoly/perfil_3.
 import MiniCard from "../../components/MiniCard";
 import FooterEbook from "./footer";
 import DepoimentoCard from "../../components/DepoimentoCard";
+import Link from "next/link";
 
 export default function DozeroAoLow() {
   return (
@@ -62,15 +63,17 @@ export default function DozeroAoLow() {
           {/* card */}
           <div className="flex-col card rounded-b-xl p-5 shadow-md  text-zinc-950">
             <p>Por apenas</p>
-            <p className="text-4xl font-bold text-black">2x de R$8,95</p>
+            <p className="text-4xl font-bold text-black">2x de R$9,34</p>
             <p>ou ainda</p>
             <p>
               R$ 17,90 à vista{" "}
               <span className="hidden">(BLACKFRIDAY 2023)</span>
             </p>
-            <button className="bg-green-400 hover:bg-green-300 shadow-xl rounded-lg w-full p-3 mt-4 mb-4 text-xl font-bold">
-              EU QUERO AGORA!
-            </button>
+            <Link href="https://pay.hotmart.com/J85992195J">
+              <button className="bg-green-400 hover:bg-green-300 shadow-xl rounded-lg w-full p-3 mt-4 mb-4 text-xl font-bold">
+                EU QUERO AGORA!
+              </button>
+            </Link>
             <div className="flex justify-center border mt-2">
               <Image
                 className="p-2"
@@ -138,7 +141,7 @@ export default function DozeroAoLow() {
       </div>
 
       <div className="flex flex-col justify-center items-center w-screen p-8 bg-gradient-to-b from-zinc-950 to-zinc-800 md:flex-row md:items-start">
-        <div className="flex flex-col  w-[512px] p-5 ">
+        <div className="flex flex-col w-[512px] p-5 ">
           <div className="flex border p-4 bg-slate-300 shadow-xl  w-full h-auto justify-center items-center rounded-2xl mb-4">
             <Image
               src={imgMario}
@@ -158,7 +161,7 @@ export default function DozeroAoLow() {
           </p>
         </div>
 
-        <div className="flex flex-col  w-[512px] items-center p-5 gap-4">
+        <div className="flex flex-col w-[512px] items-center p-5 gap-4">
           {/* card */}
           <div className="flex flex-col items-center text-center w-auto h-auto p-4 bg-gradient-to-b from-zinc-600 to-zinc-950  rounded-lg border border-slate-500 shadow-slate-700 shadow-md">
             <Image
@@ -212,10 +215,11 @@ export default function DozeroAoLow() {
               de envio e confecção.
             </p>
           </div>
-
-          <button className="bg-green-400 hover:bg-green-300 border-b border-b-black rounded-lg w-full p-3 mt-4 mb-4 text-xl font-bold shadow-md text-zinc-950">
-            EU QUERO AGORA!
-          </button>
+          <Link className="w-full" href="https://pay.hotmart.com/J85992195J">
+            <button className="bg-green-400 hover:bg-green-300 border-b border-b-black rounded-lg w-full p-3 mt-4 mb-4 text-xl font-bold shadow-md text-zinc-950">
+              EU QUERO AGORA!
+            </button>
+          </Link>
         </div>
       </div>
       {/* Content */}
@@ -263,9 +267,11 @@ export default function DozeroAoLow() {
               </span>
             </p>
             <br />
-            <button className="bg-green-400 hover:bg-green-300 rounded-lg w-full p-3 mt-4 mb-4 text-xl font-bold shadow-md text-zinc-950">
-              COMPRAR AGORA E FAZER PARTE DA COMUNIDADE!
-            </button>
+            <Link href="https://pay.hotmart.com/J85992195J">
+              <button className="bg-green-400 hover:bg-green-300 rounded-lg w-full p-3 mt-4 mb-4 text-xl font-bold shadow-md text-zinc-950">
+                COMPRAR AGORA E FAZER PARTE DA COMUNIDADE!
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -504,10 +510,11 @@ export default function DozeroAoLow() {
               conhecer mais sobre a minha metodologia.
             </p>
           </div>
-
-          <button className="bg-green-400 hover:bg-green-300 shadow-xl rounded-lg w-full p-3 mt-4 mb-4 text-zinc-950 text-xl font-bold">
-            VOU COMEÇAR AGORA!
-          </button>
+          <Link href="https://pay.hotmart.com/J85992195J">
+            <button className="bg-green-400 hover:bg-green-300 shadow-xl rounded-lg w-full p-3 mt-4 mb-4 text-zinc-950 text-xl font-bold">
+              VOU COMEÇAR AGORA!
+            </button>
+          </Link>
         </div>
       </div>
 
