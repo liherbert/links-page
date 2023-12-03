@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 
 import imgCapaEbook from "public/images/cursos/do-zero-ao-3d-lowpoly/capa_ebook_glow.png";
@@ -147,7 +148,6 @@ export default function DozeroAoLow() {
               src={imgMario}
               width={320}
               height={240}
-              quality={75}
               alt="Mario e Thails"
             ></Image>
           </div>
