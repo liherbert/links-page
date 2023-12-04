@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Topo from "../components/Topo";
+import FooterLinks from "@/components/Footer";
 
 import perfilImg from "public/perfil.jpg";
 import artstationImg from "public/icon_artstation.png";
@@ -11,18 +12,21 @@ import youtubeinImg from "public/icon_youtube.png";
 import pequenavingancaImg from "public/icon_pequena_vinganca.jpg";
 import discordImg from "public/icon_discord_branco.png";
 
+const perfil = "/perfil.jpg";
+
 export default function Home() {
   return (
     <div className="w-screen h-screen">
       <Topo />
+
       <div className="m-0 flex flex-col items-center justify-center md:flex-row">
         {/* lateral esquerda */}
         <div className="mr-0 flex flex-col w-96 justify-center items-center md:mr-10">
           <div className="bg-fundo-branco bg-center bg-no-repeat bg-contain rounded-full w-52 h-52 mt-12 flex items-center justify-center">
             <div className="border-4 border-white rounded-full w-32 h-32  overflow-hidden shadow-2xl items-center flex flex-row justify-center">
-              <img
+              <Image
                 // src="/perfil.jpg"
-                src="/perfil.jpg"
+                src={perfilImg}
                 width={128}
                 height={128}
                 alt="Imagem de perfil"
@@ -77,9 +81,10 @@ export default function Home() {
             <button className="flex justify-between items-center rounded-full text-center drop-shadow-2xl w-full h-10 transition ease-in-out delay-100 bg-red-bt hover:-translate-y-1 hover:scale-110  hover:bg-red-bt-h duration-100 ">
               <div className="ml-6 w-8">
                 {/* <Image  */}
-                <img
-                  src="/icon_discord_branco.png"
-                  // src={discordImg}
+                <Image
+                  src={discordImg}
+                  width={26}
+                  height={26}
                   alt="Imagem do ícone do discord"
                 />
               </div>
@@ -91,7 +96,8 @@ export default function Home() {
 
           <h2 className="text-center"> CURSOS E APOSTILAS</h2>
 
-          <Link href="https://liherbert-lisboa.kpages.online/nova-pagina-612e3323-8d10-4592-8318-14b877df6a3e">
+          <Link href={"e-book/do-zero-ao-3d-lowpoly"}>
+            {/* <Link href="https://liherbert-lisboa.kpages.online/nova-pagina-612e3323-8d10-4592-8318-14b877df6a3e"> */}
             <button className="flex justify-between items-center rounded-full text-center drop-shadow-2xl w-full h-10 transition ease-in-out delay-100 bg-red-bt hover:-translate-y-1 hover:scale-110  hover:bg-red-bt-h duration-100 ">
               <div className="ml-6 w-8">📕</div>
               <div className="w-full pr-12 text-center">
@@ -105,10 +111,10 @@ export default function Home() {
           <Link href="https://www.artstation.com/liherbert_artes">
             <button className="flex justify-between items-center rounded-full text-center drop-shadow-2xl w-full h-10 transition ease-in-out delay-100 bg-red-bt hover:-translate-y-1 hover:scale-110  hover:bg-red-bt-h duration-100 ">
               <div className="ml-6 w-8">
-                {/* <Image */}
-                <img
-                  src="/icon_artstation.png"
-                  // src={artstationImg}
+                <Image
+                  src={artstationImg}
+                  width={26}
+                  height={26}
                   alt="Imagem do ícone do artstation"
                 />
               </div>
@@ -120,10 +126,11 @@ export default function Home() {
             <button className="flex justify-between items-center rounded-full text-center drop-shadow-2xl w-full h-10 transition ease-in-out delay-100 bg-red-bt hover:-translate-y-1 hover:scale-110  hover:bg-red-bt-h duration-100 ">
               <div className="ml-6 w-8">
                 {/* <Image */}
-                <img
-                  src="/icon_pequena_vinganca.jpg"
+                <Image
                   className="rounded-md"
-                  // src={pequenavingancaImg}
+                  src={pequenavingancaImg}
+                  width={26}
+                  height={26}
                   alt="Imagem do ícone pequena vingança"
                 />
               </div>
@@ -142,9 +149,11 @@ export default function Home() {
             <button className="flex justify-between items-center rounded-full text-center drop-shadow-2xl w-full h-10 transition ease-in-out delay-100 bg-red-bt hover:-translate-y-1 hover:scale-110  hover:bg-red-bt-h duration-100 ">
               <div className="ml-6 w-8">
                 {/* <Image */}
-                <img
-                  src="/icon_instagram.png"
-                  // src={instagramImg}
+                <Image
+                  // src="/icon_instagram.png"
+                  src={instagramImg}
+                  width={26}
+                  height={26}
                   alt="Imagem do ícone do instagram"
                 />
               </div>
@@ -156,9 +165,10 @@ export default function Home() {
             <button className="flex justify-between items-center rounded-full text-center drop-shadow-2xl w-full h-10 transition ease-in-out delay-100 bg-red-bt hover:-translate-y-1 hover:scale-110  hover:bg-red-bt-h duration-100 ">
               <div className="ml-6 w-8">
                 {/* <Image */}
-                <img
-                  src="/icon_linkedin.png"
-                  //  src={linkedinImg}
+                <Image
+                  src={linkedinImg}
+                  width={26}
+                  height={26}
                   alt="Imagem do ícone do linkedin"
                 />
               </div>
@@ -175,9 +185,10 @@ export default function Home() {
             <button className="flex justify-between items-center rounded-full text-center drop-shadow-2xl w-full h-10 transition ease-in-out delay-100 bg-red-bt hover:-translate-y-1 hover:scale-110  hover:bg-red-bt-h duration-100 ">
               <div className="ml-6 w-8">
                 {/* <Image  */}
-                <img
-                  src="/icon_youtube.png"
-                  // src={youtubeinImg}
+                <Image
+                  src={youtubeinImg}
+                  width={26}
+                  height={26}
                   alt="Imagem de youtube"
                 />
               </div>
@@ -186,13 +197,15 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <footer className="w-screen h-20 p-5 mt-10 bg-zinc-800 bottom-0 relative items-center justify-center text-center flex text-xs border-t-2 border-neutral-900">
+      <div className="w-screen bg-slate-500 border-t border-slate-700 mt-28"></div>
+      <FooterLinks></FooterLinks>
+      {/* <footer className="w-screen h-20 p-5 mt-10 bg-zinc-800 bottom-0 relative items-center justify-center text-center flex text-xs border-t-2 border-neutral-900">
         Desenvolvido por: Liherbert Artes Studio - 2023 <br />
         Todos os direitos reservados - CNPJ: 46.345.671/0001-95 - Campina Grande
         - PB
         <br />
         e-mail: contato@LiherbertArtes.com.br
-      </footer>
+      </footer> */}
     </div>
   );
 }

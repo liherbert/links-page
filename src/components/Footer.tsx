@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function FooterEbook() {
+export default function FooterLinks() {
   return (
     <div className="flex flex-col w-screen justify-center items-center p-5 text-center text-xs">
       <Image

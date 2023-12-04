@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
 
+import imgPerfil from "public/perfil.jpg";
 import imgCapaEbook from "public/images/cursos/do-zero-ao-3d-lowpoly/capa_ebook_glow.png";
 import imgCheck from "public/images/cursos/do-zero-ao-3d-lowpoly/check.png";
 import imgFormasPgt from "public/images/cursos/do-zero-ao-3d-lowpoly/formas-de-pagamento.png";
-import imgMario from "public/images/cursos/do-zero-ao-3d-lowpoly/Mario_Tails.png";
+import imgMarioThails from "public/images/cursos/do-zero-ao-3d-lowpoly/mario_tails.png";
 import imgEmSetup from "public/images/cursos/do-zero-ao-3d-lowpoly/perfil_todo_editado.png";
 import imgGarantia from "public/images/cursos/do-zero-ao-3d-lowpoly/garantia-7-dias.png";
 import imgPaginas from "public/images/cursos/do-zero-ao-3d-lowpoly/paginas_juntas.png";
@@ -15,6 +16,20 @@ import FooterEbook from "./footer";
 import DepoimentoCard from "../../components/DepoimentoCard";
 import Link from "next/link";
 
+const imagemCheck = "public/images/cursos/do-zero-ao-3d-lowpoly/check.png";
+const capaEbook =
+  "public/images/cursos/do-zero-ao-3d-lowpoly/capa_ebook_glow.png";
+
+const perfil = "/perfil.jpg";
+const ebook = "/images/cursos/do-zero-ao-3d-lowpoly/capa_ebook_glow.png";
+const check = "/images/cursos/do-zero-ao-3d-lowpoly/check.png";
+const formasPg = "/images/cursos/do-zero-ao-3d-lowpoly/formas-de-pagamento.png";
+const mario = "/images/cursos/do-zero-ao-3d-lowpoly/mario_tails.png";
+const setup = "/images/cursos/do-zero-ao-3d-lowpoly/perfil_todo_editado.png";
+const garantia = "/images/cursos/do-zero-ao-3d-lowpoly/garantia-7-dias.png";
+const paginas = "/images/cursos/do-zero-ao-3d-lowpoly/paginas_juntas.png";
+const perfilSobre = "/images/cursos/do-zero-ao-3d-lowpoly/perfil_3.png";
+
 export default function DozeroAoLow() {
   return (
     <>
@@ -22,11 +37,11 @@ export default function DozeroAoLow() {
         <div className="flex flex-col items-center justify-center h-24 w-[400px] md:flex-row md:justify-around">
           <Image
             className="rounded-full shadow-xl border-2 p-1 border-red-600"
-            src="/perfil.jpg"
+            src={imgPerfil}
             width={64}
             height={64}
             alt="Logo"
-          ></Image>
+          />
           <div>A oferta Blackfriday termina em:</div>
         </div>
         <div className="flex bg-zinc-800 shadow-md border border-l-0 border-r-0 border-slate-400 gap-4 h-24 items-center p-6 rounded-lg">
@@ -46,13 +61,14 @@ export default function DozeroAoLow() {
       </div>
       {/* Capa do Ebook */}
       <div className="flex w-screen  h-auto justify-center bg-gradient-to-b from-zinc-950 to-zinc-800">
+        {/* <img src={`"${perfil}"`} alt="dsf"/> */}
         <Image
           className="p-5"
           src={imgCapaEbook}
-          width={340}
-          height={571}
+          width={399}
+          height={631}
           alt="Imagem da Capa do E-book"
-        ></Image>
+        />
       </div>
       {/* Content aprenda */}
       <div className="flex flex-col w-screen h-auto p-8 bg-gradient-to-b from-zinc-950 to-zinc-800justify-center items-center text-center">
@@ -82,7 +98,7 @@ export default function DozeroAoLow() {
                 width={340}
                 height={571}
                 alt="Imagem das formas de pagamento"
-              ></Image>
+              />
             </div>
           </div>
         </div>
@@ -145,11 +161,11 @@ export default function DozeroAoLow() {
         <div className="flex flex-col w-[512px] p-5 ">
           <div className="flex border p-4 bg-slate-300 shadow-xl  w-full h-auto justify-center items-center rounded-2xl mb-4">
             <Image
-              src={imgMario}
-              width={320}
-              height={240}
-              alt="Mario e Thails"
-            ></Image>
+              src={imgMarioThails}
+              width={733}
+              height={871}
+              alt="Imagem de Mario e Thails"
+            />
           </div>
           <h1 className="text-3xl">Você ainda vai levar:</h1>
           <br />
@@ -169,7 +185,7 @@ export default function DozeroAoLow() {
               width={42}
               height={42}
               alt="Imagem icone de checagem"
-            ></Image>
+            />
 
             <h1 className="text-lg font-bold leading-1 mt-3 mb-3">
               CONVENIÊNCIA
@@ -187,7 +203,7 @@ export default function DozeroAoLow() {
               width={42}
               height={42}
               alt="Imagem icone de checagem"
-            ></Image>
+            />
 
             <h1 className="text-lg font-bold leading-1 mt-3 mb-3">
               DOCUMENTAÇÃO ORGANIZADA
@@ -205,7 +221,7 @@ export default function DozeroAoLow() {
               width={42}
               height={42}
               alt="Imagem icone de checagem"
-            ></Image>
+            />
 
             <h1 className="text-lg font-bold leading-1 mt-3 mb-3">
               CUSTO BENEFÍCIO
@@ -230,9 +246,9 @@ export default function DozeroAoLow() {
               src={imgEmSetup}
               width={530}
               height={307}
-              quality={75}
-              alt="Mario e Thails"
-            ></Image>
+              // quality={75}
+              alt="Imagem Perfil em Setup"
+            />
           </div>
         </div>
         <div className="flex flex-col  w-[512px] p-5  ">
@@ -322,9 +338,9 @@ export default function DozeroAoLow() {
               src={imgGarantia}
               width={350}
               height={350}
-              quality={75}
+              // quality={75}
               alt="Simbolo de garantia"
-            ></Image>
+            />
             <div className="flex flex-col  p-5 text-lg text-justify indent-8 ">
               <h2 className="text-xl">Fique tranquilo</h2> <br />
               <p>
@@ -428,9 +444,9 @@ export default function DozeroAoLow() {
               src={imgPaginas}
               width={450}
               height={450}
-              quality={100}
+              //quality={100}
               alt="Simbolo de garantia"
-            ></Image>
+            />
 
             <div className="p-5 ">
               <ul>
@@ -466,9 +482,9 @@ export default function DozeroAoLow() {
             src={imgPerfilSobre}
             width={450}
             height={450}
-            quality={100}
+            //quality={100}
             alt="Simbolo de garantia"
-          ></Image>
+          />
         </div>
         <div className="flex flex-col  w-[512px] p-5">
           <h1 className="text-3xl">

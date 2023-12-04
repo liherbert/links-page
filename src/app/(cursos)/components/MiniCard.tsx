@@ -9,8 +9,8 @@ export default function MiniCard(props: any) {
           src={props.imagem}
           width={42}
           height={42}
-          alt="Imagem da Capa do E-book"
-        ></Image>
+          alt="Icone de checagem"
+        />
         <h1 className="text-2xl font-semibold mb-4 mt-2 leading-6">
           {props.title}
         </h1>
